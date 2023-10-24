@@ -1,0 +1,146 @@
+
+.help-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.banner{
+    padding-top: 40px;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font-family: Tahoma, sans-serif;
+    width: 100%;
+    height: 250px;
+    background-color: rgb(154, 201, 254);
+}
+
+.helpQuestion{
+    padding-bottom: 20px;
+}
+
+.search-container{
+    position: relative;
+    display: inline-block;
+}
+
+.searchInput{
+    width: 550px;
+    height: 50px;
+    border-radius: 150px;
+    border: 0;
+    padding-left: 15px;
+    font-size: 15px;
+    font-family: Tahoma, sans-serif;
+}
+
+.searchButton{
+    background-color: rgb(154, 201, 254);
+    border: 0;
+    color: white;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-image: url('pics/searchIcon.png');
+    background-size: 33px 33px; /* Adjust the sizing of the background image as needed */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    background-position: center; /* Center the image within the button */
+
+    /*i HAVE NO IDEA*/
+    position: absolute;
+    top: 14px;
+    right: 8px;
+}
+
+.container-item{
+    color: black;
+    background-color: white;
+    width: 270px;
+    height: 300px;
+    outline: 0;
+    margin: 0 15px;
+    text-align: center;
+}
+
+.imageIcon{
+    padding-top: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+h2{
+    color: rgb(154, 201, 254);
+    font-size: 18px;
+    font-family: Tahoma, sans-serif;
+}
+
+p{
+    font-family: Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+@media (max-width: 1430px) {
+
+    .help-container {
+        display: grid;
+        grid-template-columns: 270px 270px 270px;
+    }
+}
+
+@media (max-width: 910px) {
+    .searchInput{
+        width: 450px;
+    }
+
+    .question{
+        font-size: 38px;
+    }
+
+    .help-container {
+        display: grid;
+        grid-template-columns: 270px 270px;
+    }
+}
+
+@media (max-width: 770px){
+    .searchInput{
+        width: 400px;
+    }
+}
+
+@media (max-width: 620px) {
+    .searchInput{
+        width: 370px;
+    }
+
+    .question{
+        font-size: 32px;
+    }
+
+    .help-container {
+        grid-template-columns: 100%;
+    }
+    .container-item{
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    .searchInput{
+        width: 350px;
+        height: 40px;
+    }
+
+    .searchButton{
+        width: 30px;
+        height: 30px;
+        top: 19px;
+    }
+
+    .question{
+        font-size: 26px;
+    }
+
+}
