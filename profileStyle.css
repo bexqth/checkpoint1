@@ -1,7 +1,7 @@
 .flex-container{
     display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-container{
@@ -42,8 +42,6 @@
 }
 
 .editProfileButton, .uploadProfilePictureButton{
-    /*color: rgb(154, 201, 254);
-    border: 2px solid rgb(154, 201, 254);*/
     font-family: Tahoma, sans-serif;
     font-size: 17px;
 }
@@ -104,10 +102,18 @@
 
 @media (max-width: 700px){
 
-    .profile-container{
+    .info-container{
+        padding: 0;
+    }
+
+    .flex-container{
         flex-direction: column;
-        width: 450px;
-        height: 600px;
+    }
+
+    .profile-container{
+        width: 100%;
+        flex-direction: column;
+        height: 700px;
     }
 
     .field{
@@ -122,6 +128,7 @@
     .editProfileButton{
         width: 100px;
         height: 30px;
+        padding-bottom: 30px;
     }
 
     .uploadProfilePictureButton{
@@ -131,13 +138,49 @@
 }
 
 @media (max-width: 500px){
-    .profile-container{
-        flex-direction: column;
-        width: 450px;
-        height: 600px;
+
+    .info-container, .edit-container{
+        padding: 0;
+        width: 100%;
+    }
+
+    .field, .tag{
+        padding-left: 10px;
+    }
+
+    .editProfileButton{
+        margin-right: 10px;
     }
 
     .profilePicture{
         width: 60%;
     }
+}
+
+@media(max-width: 446px){
+    .field, .tag{
+        padding-left: 20px;
+    }
+
+    .editProfileButton{
+        margin-left:15px;
+    }
+
+    .profilePicture{
+        width: 50%;
+    }
+}
+
+@media(max-width: 320px){
+    .uploadProfilePictureButton{
+        margin-bottom: 18px;
+    }
+
+    .editProfileButton{
+        margin-left:15px;
+        width: 30%;
+        font-size: 15px;
+        padding-top: 5px;
+    }
+
 }

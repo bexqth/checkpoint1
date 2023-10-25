@@ -44,11 +44,9 @@
     height: 40px;
     border-radius: 20px;
     background-image: url('pics/searchIcon.png');
-    background-size: 33px 33px; /* Adjust the sizing of the background image as needed */
-    background-repeat: no-repeat; /* Prevent the image from repeating */
-    background-position: center; /* Center the image within the button */
-
-    /*i HAVE NO IDEA*/
+    background-size: 33px 33px;
+    background-repeat: no-repeat;
+    background-position: center;
     position: absolute;
     top: 14px;
     right: 8px;
@@ -133,6 +131,10 @@ p{
         height: 40px;
     }
 
+    .container-item{
+        width: 100%;
+    }
+
     .searchButton{
         width: 30px;
         height: 30px;
@@ -143,4 +145,18 @@ p{
         font-size: 26px;
     }
 
+}
+
+@media(max-width: 400px){
+    .question{
+        font-size: 24px;
+    }
+
+    .searchInput{
+        width: 80%;
+    }
+
+    .searchButton{
+        right: 15px;
+    }
 }
