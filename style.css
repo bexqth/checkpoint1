@@ -71,6 +71,7 @@ html, body {
     padding-top: 30px;
 }
 
+
 @media(max-width: 350px){
     .workplaceName{
         margin: 0;
