@@ -15,7 +15,8 @@ html, body {
 
 .optionButton{
     height: 50px;
-    background-color: rgb(154, 201, 254);
+    /*background-color: rgb(154, 201, 254);*/
+    background-color: rgba(131,182,229,255);
     color: white;
     font-family: Tahoma, sans-serif;
     cursor: pointer;
@@ -37,7 +38,8 @@ html, body {
 
 .optionButton:hover{
     background-color: white;
-    color: rgb(154, 201, 254);
+    /*color: rgb(154, 201, 254);*/
+    color: rgba(131,182,229,255);
 
 }
 
@@ -47,7 +49,8 @@ html, body {
     border-top-right-radius: 20px;
     border-bottom-right-radius: 20px;
     padding-top: 20px;
-    background-color: rgb(154, 201, 254);
+    /*background-color: rgb(154, 201, 254);*/
+    background-color: rgba(131,182,229,255);
 }
 
 .workspace-container{

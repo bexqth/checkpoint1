@@ -1,49 +1,99 @@
+body{
+    background-color: rgba(254, 254, 255, 0);
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
+
 .flexbox-container{
     display: flex;
     flex-direction: column;
 }
 
-.header-container {
-    /*width: 100%;
+.top-section {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 125vh;
+    /*background: linear-gradient(rgba(254, 254, 255, 0) 0%, rgba(254, 254, 255, 0.9) 90%), url("/pics/blue_background1.png") no-repeat;*/
+    background-image: url("/pics/blue_background1.png");
+    background-size: cover;
     display: flex;
-    flex-direction: row;
-    background-color: rgb(154, 201, 254);*/
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
 }
 
-.hName{
+/* Second section with solid color */
+.bottom-section {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(254, 254, 255, 0.9);
+    margin: 0;
+    padding: 0;
+}
+
+
+.header-container {
+    padding-right: 20px;
+}
+
+/*.hName{
     color: black;
     padding: 10px;
     display: inline-block;
     font-family: Verdana, serif;
-}
+}*/
 
 .login, .sign {
     float: right;
-    padding-right: 10px;
-    padding-top: 38px;
-    color: black;
+    margin-left: 10px;
+    margin-top: 38px;
+    font-size: 18px;
+    color: white;
     font-family: "Microsoft Tai Le", serif;
+    border-radius: 25px;
+    padding: 8px 25px;
+    border: 2px solid white;
 }
+
 
 .login:hover, .sign:hover {
     text-decoration: underline;
     cursor: pointer;
+    color: rgba(35,109,174,255);
+    background: white;
 }
 
 .text-container {
-    display: flex;
-    flex-direction: column;
+    background-color: rgba(131,182,229,255);
+    display: block;
     align-items: center;
-    text-align: center; /* Add this for center-aligned text */
-    font-family: "Microsoft Tai Le", serif;
+    align-content: center;
+    align-self: center;
+    color: white;
+    width: 700px;
+    height: 300px;
+    margin-top: 130px;
+    border-radius: 10px;
+    border: 1px solid white;
+    text-align: center;
 }
 
+
 .slogan{
+    font-family: "Microsoft Tai Le", serif;
     font-size: 45px;
+    color: white;
 }
 
 .description {
-    font-size: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-family: "Microsoft Tai Le", serif;
+    font-size: 30px;
+    color: white;
 }
 
 .picture-container {
